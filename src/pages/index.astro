@@ -1,8 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main></main>
+	<main>
+		<!-- Comandos para posicionar el texto en el entorno y tamaño de la interfaz  -->
+		<section class="w-full lg:w-[840px] mx-auto py-44">
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-5">
+			Hey, Soy Juan Sebastian <div class="flex justify-center items-center">
+			  <Badge> Disponible para Trabajar </Badge>
+			  </div>
+			</h1>
+		<h2>
+			Estudiante de Ingenieria Mecatronica. De Bogota, Colombia.
+		</h2>
+
+		<ul></ul>
+	</section>
+	</main>
 </Layout>

@@ -1,5 +1,8 @@
 ---
-import Header from '../components/Header.astro';
+//cargamos la libreria fontsource para texto
+// Supports weights 100-900
+import "@fontsource-variable/onest"
+import Header from "../components/Header.astro"
 interface Props {
 	title: string;
 }
@@ -25,11 +28,13 @@ const { title } = Astro.props;
 
 <style is:global>
 	:root {
+		/* Cambia los colores de las letras por defecto ya que el fondo es oscuro  */
 		color-scheme: dark;
 	}
 
 	html {
-		font-family: system-ui, sans-serif;
+		/* Llamo a la libreria del tamaño de letra  */
+		font-family: "Onest Variable", system-ui, sans-serif;
 	}	
 
 	body{
@@ -37,6 +42,8 @@ const { title } = Astro.props;
 		background: #070707;
 		/* Para centrar la imagen  */
 		display: flex;
+		/* para ajustar mejor el texto */
+		flex-direction: column;
 		justify-content: center;
 		min-height: 100vh;
 	}
