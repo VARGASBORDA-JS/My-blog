@@ -7,14 +7,27 @@ import Badge from '../components/Badge.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 		<!-- Comandos para posicionar el texto en el entorno y tamaño de la interfaz  -->
-		<section class="w-full lg:w-[840px] mx-auto py-44">
-		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-5">
-			Hey, Soy Juan Sebastian <div class="flex justify-center items-center">
+		<!-- Enlace a pagina web -->
+		<section class="w-full lg:w-[580px] mx-auto py-56">
+			<!-- Se coloca la imagen o icono personal -->
+			<img 
+			class="rounded-full w-12 h-12 mb-4"
+			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj3r7s85e8TOK6CS0whr35put-PX5Ns5URcg&s" 
+			alt="midudev photo"  
+			/>
+		<h1 class="text-white text-5xl font-bold flex flex-row gap-x-2 pb-5">
+			Hey, Soy Juan Sebastian <a 
+			href="https://www.linkedin.com/in/juan-sebastian-vargas-borda-93ba50201/" 
+			target="_blank" 
+			rel="noopener" 
+			class="flex justify-center items-center"
+			>
 			  <Badge> Disponible para Trabajar </Badge>
 			  </div>
 			</h1>
-		<h2>
-			Estudiante de Ingenieria Mecatronica. De Bogota, Colombia.
+			<!-- Tamaño del texto text-#xl -->
+		<h2 class="text-2xl opacity-80 text-wrap">
+	     Estudiante de Ingenieria Mecatronica. De Bogota, <span class="text-yellow-300">Colo</span><span class="text-blue-600">mb</span><span class="text-red-600">ia</span>
 		</h2>
 
 		<ul></ul>
